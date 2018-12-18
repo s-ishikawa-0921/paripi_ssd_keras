@@ -261,6 +261,7 @@ def schedule(epoch, decay=0.9):
 #callbacks = [keras.callbacks.ModelCheckpoint('./checkpoints/weights.{epoch:02d}-{val_loss:.2f}.hdf5',
 callbacks = [keras.callbacks.ModelCheckpoint('./checkpoints_train/weights.{epoch:02d}-{val_loss:.2f}.hdf5',
                                              verbose=1,
+                                             save_best_only=True,
                                              save_weights_only=True),
              keras.callbacks.LearningRateScheduler(schedule)]
 
