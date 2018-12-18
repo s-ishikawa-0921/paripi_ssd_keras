@@ -17,6 +17,8 @@ from ssd import SSD300
 from ssd_training import MultiboxLoss
 from ssd_utils import BBoxUtility
 
+args = sys.argv
+
 plt.rcParams['figure.figsize'] = (8, 8)
 plt.rcParams['image.interpolation'] = 'nearest'
 
@@ -236,7 +238,10 @@ gen = Generator(gt, bbox_util, 4, path_prefix,
                 (input_shape[0], input_shape[1]), do_crop=False)
 
 model = SSD300(input_shape, num_classes=NUM_CLASSES)
-#model.load_weights('weights_SSD300.hdf5', by_name=True)
+
+if(len(args) > 1:
+    print('load model:' + args[1]);
+    model.load_weights(args[1], by_name=True)
 
 freeze = ['input_1', 'conv1_1', 'conv1_2', 'pool1',
           'conv2_1', 'conv2_2', 'pool2',
