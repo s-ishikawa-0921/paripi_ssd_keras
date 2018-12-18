@@ -219,7 +219,7 @@ class Generator(object):
 
 
 
-path_prefix = '../data/JPEGImages/'
+path_prefix = 'data/JPEGImages/'
 
 
 # 画像ファイル名の変更
