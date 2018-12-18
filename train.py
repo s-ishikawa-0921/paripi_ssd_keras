@@ -242,9 +242,10 @@ model = SSD300(input_shape, num_classes=NUM_CLASSES)
 if len(args) > 1:
     print('load model:' + args[1]);
     model.load_weights(args[1], by_name=True)
-else
+else:
     print('without model file');
-    
+
+
 freeze = ['input_1', 'conv1_1', 'conv1_2', 'pool1',
           'conv2_1', 'conv2_2', 'pool2',
           'conv3_1', 'conv3_2', 'conv3_3', 'pool3']#,
