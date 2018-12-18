@@ -108,16 +108,16 @@ class Generator(object):
         return np.clip(img, 0, 255)
 
     def horizontal_flip(self, img, y):
-        print('horizontal_flip')
-        print(y.shape)
+        #print('horizontal_flip')
+        #print(y.shape)
         if np.random.random() < self.hflip_prob:
             img = img[:, ::-1]
             y[:, [0, 2]] = 1 - y[:, [2, 0]]
         return img, y
 
     def vertical_flip(self, img, y):
-        print('vertical_flip')
-        print(y.shape)
+        #('vertical_flip')
+        #print(y.shape)
         if np.random.random() < self.vflip_prob:
             img = img[::-1]
             y[:, [1, 3]] = 1 - y[:, [3, 1]]
@@ -185,7 +185,7 @@ class Generator(object):
             for key in keys:            
                 img_path = self.path_prefix + key
                 
-                print(img_path)
+                #print(img_path)
                 img = imread(img_path).astype('float32')
                 y = self.gt[key].copy()
                 if train and self.do_crop:
