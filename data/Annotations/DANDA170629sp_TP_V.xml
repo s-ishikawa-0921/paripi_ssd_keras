@@ -1,7 +1,7 @@
 <annotation verified="yes">
 	<folder>hands</folder>
 	<filename>DANDA170629sp_TP_V.jpg</filename>
-	<path>C:\project\paripi\10_appl\data\downloads\hands\DANDA170629sp_TP_V.jpg</path>
+	<path>/content/paripi_ssd_keras/data/JPEGImages/DANDA170629sp_TP_V.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>

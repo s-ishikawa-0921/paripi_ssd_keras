@@ -1,7 +1,7 @@
 <annotation verified="yes">
 	<folder>hands</folder>
 	<filename>01.jpg</filename>
-	<path>C:\project\paripi\10_appl\data\downloads\hands\01.jpg</path>
+	<path>/content/paripi_ssd_keras/data/JPEGImages/01.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,7 +12,7 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>face</name>
+		<name>hand</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>

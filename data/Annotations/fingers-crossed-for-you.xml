@@ -1,7 +1,7 @@
 <annotation verified="yes">
 	<folder>hands</folder>
 	<filename>fingers-crossed-for-you.jpg</filename>
-	<path>C:\project\paripi\10_appl\data\downloads\hands\fingers-crossed-for-you.jpg</path>
+	<path>/content/paripi_ssd_keras/data/JPEGImages/fingers-crossed-for-you.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
