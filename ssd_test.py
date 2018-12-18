@@ -13,6 +13,8 @@ from ssd import SSD300
 from ssd_utils import BBoxUtility
 import sys
 
+args = sys.argv
+
 plt.rcParams['figure.figsize'] = (8, 8)
 plt.rcParams['image.interpolation'] = 'nearest'
 
