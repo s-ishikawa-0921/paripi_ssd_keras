@@ -280,7 +280,7 @@ model.compile(optimizer=optim,
 #                              nb_worker=1)
 
 epochs = 1000
-batch_size=16 #例
+batch_size=1 #例
 history = model.fit_generator(gen.generate(True), 
                               steps_per_epoch =gen.train_batches//batch_size,
                               epochs=epochs, verbose=1,
