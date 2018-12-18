@@ -15,6 +15,7 @@ import sys
 
 args = sys.argv
 
+%matplotlib inline
 plt.rcParams['figure.figsize'] = (8, 8)
 plt.rcParams['image.interpolation'] = 'nearest'
 
